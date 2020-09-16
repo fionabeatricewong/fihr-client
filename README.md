@@ -6,7 +6,7 @@
 
 - [Deployed Client](https://fionabeatricewong.github.io/fihr-client)
 - [Client Repo](https://github.com/fionabeatricewong/fihr-client)
-- [Deployed API]()
+- [Deployed API](https://immense-ocean-38958.herokuapp.com/)
 - [API Repo](https://github.com/fionabeatricewong/fihr-api)
 
 ## Planning Story
