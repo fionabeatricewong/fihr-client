@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import logo from '../../FiHR_logo.png'
 import home from '../../home_icon.png'
+import settings from '../../settings_icon.png'
 
 const authenticatedOptions = (
   <Fragment>
-    <NavDropdown title="Settings" alignRight id="settings-dropdown">
+    <NavDropdown title={<img src={settings} className="navbar-right"/>} alignRight id="settings-dropdown">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
       <NavDropdown.Divider />
       <NavDropdown.Item href="#sign-out">Sign Out</NavDropdown.Item>
