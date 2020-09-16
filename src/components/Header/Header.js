@@ -24,7 +24,7 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar bg="transparent" variant="light" expand="md">
     <Navbar.Brand href="#" className="navbar-left">
       <img src={logo} className="navbar-left"/>FiHR
     </Navbar.Brand>
