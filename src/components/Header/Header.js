@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import logo from '../../FiHR_logo.png'
+import home from '../../home_icon.png'
 
 const authenticatedOptions = (
   <Fragment>
@@ -19,7 +20,9 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link href="/">Home</Nav.Link>
+    <Nav.Link href="/">
+      <img src={home} className="navbar-right"/>
+    </Nav.Link>
   </Fragment>
 )
 
