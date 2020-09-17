@@ -15,5 +15,5 @@ export default {
   patientDeleteSuccess: 'Patient has been removed from the system.',
   patientDeleteFailure: 'Patient is still in the system.',
   patientEditSuccess: 'Patient info has been updated.',
-  patientEditFailure: 'Patient info has been updated.'
+  patientEditFailure: 'Patient is still the same.'
 }
