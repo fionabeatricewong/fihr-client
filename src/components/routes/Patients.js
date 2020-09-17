@@ -4,6 +4,8 @@ import { index } from '../../api/patient'
 import messages from '../AutoDismissAlert/messages'
 import Layout from '../../components/Layout'
 import add from '../../add_button.png'
+// import Table from 'react-bootstrap/Table'
+import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact'
 
 class Patients extends Component {
   constructor () {
@@ -36,7 +38,11 @@ class Patients extends Component {
   // const { name, quantity, price } = this.state
     const patients = this.state.patients.map(patient => (
       <tr key={patient._id}>
-        <td><Link to={`/patients/${patient._id}`}>{patient.name}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{patient.lastName}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{patient.firstName}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{patient.middleName}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{patient.dob}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{patient.gender}</Link></td>
       </tr>
     ))
     return (
@@ -44,11 +50,20 @@ class Patients extends Component {
         <Link to='/patients/add-patient'>
           <img src={add} className="add-patient"/>
         </Link>
-        <table>
-          <tbody>
+        <MDBTable responsive hover size="sm">
+          <MDBTableHead className="thead">
+            <tr>
+              <th>Last Name</th>
+              <th>First Name</th>
+              <th>Middle Initial/Name</th>
+              <th>DOB</th>
+              <th>Gender</th>
+            </tr>
+          </MDBTableHead>
+          <MDBTableBody>
             {patients}
-          </tbody>
-        </table>
+          </MDBTableBody>
+        </MDBTable>
       </Layout>
     )
   }
