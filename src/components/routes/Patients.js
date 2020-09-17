@@ -3,6 +3,7 @@ import { Link, withRouter } from 'react-router-dom'
 import { index } from '../../api/patient'
 import messages from '../AutoDismissAlert/messages'
 import Layout from '../../components/Layout'
+import add from '../../add_button.png'
 
 class Patients extends Component {
   constructor () {
@@ -41,7 +42,7 @@ class Patients extends Component {
     return (
       <Layout>
         <Link to='/patients/add-patient'>
-          <button className="add-patient">Add New Patient</button>
+          <img src={add} className="add-patient"/>
         </Link>
         <table>
           <tbody>
