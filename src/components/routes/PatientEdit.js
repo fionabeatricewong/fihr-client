@@ -27,7 +27,7 @@ class PatientEdit extends Component {
     [event.target.name]: event.target.value
   })
 
-  onItemEdit = event => {
+  onPatientEdit = event => {
     event.preventDefault()
 
     const { msgAlert, history, user } = this.props
