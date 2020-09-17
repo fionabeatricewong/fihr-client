@@ -61,7 +61,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="firstName">
                 <Form.Label>First Name</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   name="firstName"
                   value={firstName}
@@ -84,7 +83,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="lastName">
                 <Form.Label>Last Name</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   name="lastName"
                   value={lastName}
@@ -96,7 +94,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="dob">
                 <Form.Label>Date of Birth</Form.Label>
                 <Form.Control
-                  required
                   type="date"
                   name="dob"
                   value={dob}
@@ -108,7 +105,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="gender">
                 <Form.Label>Gender</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   name="gender"
                   value={gender}
@@ -120,7 +116,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="phone">
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   name="phone"
                   value={phone}
@@ -132,7 +127,6 @@ class PatientEdit extends Component {
               <Form.Group controlId="email">
                 <Form.Label>E-mail</Form.Label>
                 <Form.Control
-                  required
                   type="text"
                   name="email"
                   value={email}
