@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import { index } from '../../api/patient'
 import messages from '../AutoDismissAlert/messages'
-// import Layout from '../../components/Layout'
+import Layout from '../../components/Layout'
 
 class Patients extends Component {
   constructor () {
@@ -39,13 +39,17 @@ class Patients extends Component {
       </tr>
     ))
     return (
-      // <Layout>
-      <table>
-        <tbody>
-          {patients}
-        </tbody>
-      </table>
-      // </Layout>
+      <Layout>
+        <Link to='/patients/add-patient'>
+          <button>Add New Patient</button>
+        </Link>
+        <Link to='/patients'>All Patients</Link>
+        <table>
+          <tbody>
+            {patients}
+          </tbody>
+        </table>
+      </Layout>
     )
   }
 }
