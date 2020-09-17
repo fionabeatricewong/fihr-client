@@ -9,6 +9,7 @@ import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
+import PatientCreate from '../routes/PatientCreate'
 import Patients from '../routes/Patients'
 
 class App extends Component {
@@ -44,24 +45,35 @@ class App extends Component {
           />
         ))}
         <main className="container">
+
           <Route exact path='/' render={() => (
             <Home />
           )} />
+
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
+
           <Route path='/sign-in' render={() => (
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
+
           <AuthenticatedRoute user={user} path='/sign-out' render={() => (
             <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />
+
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
+
+          <AuthenticatedRoute user={user} exact path='/patients/add-patient' render={() => (
+            <PatientCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+
           <AuthenticatedRoute user={user} exact path='/patients' render={() => (
             <Patients msgAlert={this.msgAlert} user={user} />
           )} />
+
         </main>
       </Fragment>
     )
