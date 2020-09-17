@@ -9,5 +9,7 @@ export default {
   patientIndexSuccess: 'You can search for one.',
   patientIndexFailure: 'Do you have patients?',
   patientCreateSuccess: 'Patient is in the system.',
-  patientCreateFailure: 'Patient is not in the system.'
+  patientCreateFailure: 'Patient is not in the system.',
+  patientShowSuccess: 'Here is the patient\'s info.',
+  patientShowFailure: 'Could not show patient\'s info.'
 }
