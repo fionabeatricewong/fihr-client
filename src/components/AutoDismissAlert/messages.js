@@ -13,5 +13,7 @@ export default {
   patientShowSuccess: 'Here is the patient\'s info.',
   patientShowFailure: 'Could not show patient\'s info.',
   patientDeleteSuccess: 'Patient has been removed from the system.',
-  patientDeleteFailure: 'Patient is still in the system.'
+  patientDeleteFailure: 'Patient is still in the system.',
+  patientEditSuccess: 'Patient info has been updated.',
+  patientEditFailure: 'Patient info has been updated.'
 }
