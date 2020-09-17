@@ -5,14 +5,14 @@ import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
 import Home from '../routes/Home.js'
+import PatientCreate from '../routes/PatientCreate'
+import PatientEdit from '../routes/PatientEdit'
+import Patients from '../routes/Patients'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
-import PatientCreate from '../routes/PatientCreate'
-import Patients from '../routes/Patients'
 import PatientShow from '../routes/PatientShow'
-import PatientEdit from '../routes/PatientEdit'
 
 class App extends Component {
   constructor () {
@@ -68,7 +68,7 @@ class App extends Component {
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
 
-          <AuthenticatedRoute user={user} exact path='/patients/add-patient' render={() => (
+          <AuthenticatedRoute user={user} exact path='/add-patient' render={() => (
             <PatientCreate msgAlert={this.msgAlert} user={user} />
           )} />
 
