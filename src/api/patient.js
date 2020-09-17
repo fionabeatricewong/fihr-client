@@ -42,3 +42,13 @@ export const patientCreate = (patient, user) => {
     }
   })
 }
+
+export const show = (id, user) => {
+  return axios({
+    headers: {
+      'Authorization': `Token token=${user.token}`
+    },
+    url: apiUrl + '/patients/' + id,
+    method: 'GET'
+  })
+}
