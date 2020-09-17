@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import Layout from '../Layout'
 import messages from '../AutoDismissAlert/messages'
 import { show } from '../../api/patient'
@@ -92,7 +92,7 @@ class PatientShow extends Component {
         <p>Contact</p>
         <p>Phone #: {patient.phone}</p>
         <p>E-mail: {patient.email}</p>
-        <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button> <button className="edit-button"><img src={edit} className="edit-patient" onClick={this.editPatient}/></button>
+        <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button> <Link to={`/patients/${this.props.match.params.id}/edit`}><img src={edit} className="edit-patient"/></Link>
       </Layout>
     )
   }
