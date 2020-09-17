@@ -11,6 +11,7 @@ import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
 import PatientCreate from '../routes/PatientCreate'
 import Patients from '../routes/Patients'
+import PatientShow from '../routes/PatientShow'
 
 class App extends Component {
   constructor () {
@@ -68,6 +69,10 @@ class App extends Component {
 
           <AuthenticatedRoute user={user} exact path='/patients/add-patient' render={() => (
             <PatientCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/patients/:id' render={(navProps) => (
+            <PatientShow {...navProps} msgAlert={this.msgAlert} user={user} />
           )} />
 
           <AuthenticatedRoute user={user} exact path='/patients' render={() => (
