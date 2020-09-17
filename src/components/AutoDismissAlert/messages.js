@@ -7,5 +7,7 @@ export default {
   changePasswordSuccess: 'Password changed successfully!',
   changePasswordFailure: 'Failed to change passwords. Check your old password and try again.',
   patientIndexSuccess: 'You can search for one.',
-  patientIndexFailure: 'Do you have patients?'
+  patientIndexFailure: 'Do you have patients?',
+  patientCreateSuccess: 'Patient is in the system.',
+  patientCreateFailure: 'Patient is not in the system.'
 }
