@@ -7,6 +7,7 @@ import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import remove from '../../delete_button.png'
 import edit from '../../edit_button.png'
+import moment from 'moment'
 
 class PatientShow extends Component {
   constructor (props) {
@@ -88,7 +89,7 @@ class PatientShow extends Component {
     return (
       <Layout>
         <p>{patient.firstName} {patient.middleName} {patient.lastName}</p>
-        <p>DOB: {patient.dob} Gender: {patient.gender}</p>
+        <p>DOB: {moment(patient.dob).format('L')} Gender: {patient.gender}</p>
         <p>Contact</p>
         <p>Phone #: {patient.phone}</p>
         <p>E-mail: {patient.email}</p>
