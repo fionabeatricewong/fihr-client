@@ -3,9 +3,13 @@ import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import logo from '../../FiHR_logo.png'
 import home from '../../home_icon.png'
 import settings from '../../settings_icon.png'
+import patients from '../../patients_icon.png'
 
 const authenticatedOptions = (
   <Fragment>
+    <Nav.Link href="#patients">
+      <img src={patients} className="navbar-right"/>
+    </Nav.Link>
     <NavDropdown title={<img src={settings} className="navbar-right"/>} alignRight id="settings-dropdown">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
       <NavDropdown.Divider />
