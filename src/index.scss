@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 $fihr-bold: #fccd55;
+$no-color: #fff;
 
 // figcaption {
 //   text-align: center;
@@ -8,6 +9,16 @@ $fihr-bold: #fccd55;
 
 .add-patient {
   height: 50px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: $no-color;
+}
+
+.edit-patient,
+.delete-patient {
+  height: 20px;
 }
 
 .navbar-left {
