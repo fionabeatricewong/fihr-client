@@ -6,6 +6,7 @@ import { show } from '../../api/patient'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import remove from '../../delete_button.png'
+import edit from '../../edit_button.png'
 
 class PatientShow extends Component {
   constructor (props) {
@@ -91,7 +92,7 @@ class PatientShow extends Component {
         <p>Contact</p>
         <p>Phone #: {patient.phone}</p>
         <p>E-mail: {patient.email}</p>
-        <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button>
+        <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button> <button className="edit-button"><img src={edit} className="edit-patient" onClick={this.editPatient}/></button>
       </Layout>
     )
   }

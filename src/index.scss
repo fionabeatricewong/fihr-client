@@ -11,14 +11,18 @@ $no-color: #fff;
   height: 50px;
 }
 
-.delete-button {
+.delete-button,
+.edit-button {
   background-color: transparent;
   border: $no-color;
 }
 
-.edit-patient,
 .delete-patient {
   height: 20px;
+}
+
+.edit-patient {
+  height: 23px;
 }
 
 .navbar-left {
