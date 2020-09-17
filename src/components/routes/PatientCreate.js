@@ -65,18 +65,18 @@ class PatientCreate extends Component {
                   type="text"
                   name="firstName"
                   value={firstName}
-                  placeholder="First Name"
+                  // placeholder="First Name"
                   onChange={this.handleChange}
                 />
               </Form.Group>
 
               <Form.Group controlId="middleName">
-                <Form.Label>Middle Initial/Name</Form.Label>
+                <Form.Label>Middle Initial / Name</Form.Label>
                 <Form.Control
                   type="text"
                   name="middleName"
                   value={middleName}
-                  placeholder="Middle Initial/Name"
+                  // placeholder="Middle Initial/Name"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -88,7 +88,7 @@ class PatientCreate extends Component {
                   type="text"
                   name="lastName"
                   value={lastName}
-                  placeholder="Last Name"
+                  // placeholder="Last Name"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -100,7 +100,7 @@ class PatientCreate extends Component {
                   type="date"
                   name="dob"
                   value={dob}
-                  placeholder="MM/DD/YYYY"
+                  // placeholder="MM/DD/YYYY"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -112,7 +112,7 @@ class PatientCreate extends Component {
                   type="text"
                   name="gender"
                   value={gender}
-                  placeholder="female, male, unspecified"
+                  placeholder="female, male, or unspecified"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -124,7 +124,7 @@ class PatientCreate extends Component {
                   type="text"
                   name="phone"
                   value={phone}
-                  placeholder="(XXX)-XXX-XXXX)"
+                  placeholder="(XXX)-XXX-XXXX"
                   onChange={this.handleChange}
                 />
               </Form.Group>
