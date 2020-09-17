@@ -8,7 +8,10 @@ import patients from '../../patients_icon.png'
 const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#patients">
+      { /* <figure> */ }
       <img src={patients} className="navbar-right"/>
+      { /* <figcaption>Patients</figcaption> */ }
+      { /* </figure> */ }
     </Nav.Link>
     <NavDropdown title={<img src={settings} className="navbar-right"/>} alignRight id="settings-dropdown">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
@@ -28,7 +31,10 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <Fragment>
     <Nav.Link href="/#">
+      { /* <figure> */ }
       <img src={home} className="navbar-right"/>
+      { /* <figcaption>Home</figcaption> */ }
+      { /* </figure> */ }
     </Nav.Link>
   </Fragment>
 )
