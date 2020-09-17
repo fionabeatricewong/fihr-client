@@ -1,4 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+// font-family: 'PT Serif', serif;
+
+* {
+  font-family: 'PT Serif', serif;
+}
 
 $fihr-bold: #fccd55;
 $no-color: #fff;
