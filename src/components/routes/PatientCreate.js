@@ -30,7 +30,7 @@ class PatientCreate extends Component {
   onPatientCreate = event => {
     event.preventDefault()
 
-    const { msgAlert, user } = this.props
+    const { msgAlert, history, user } = this.props
 
     patientCreate(this.state, user)
       .then(() => msgAlert({
@@ -38,6 +38,7 @@ class PatientCreate extends Component {
         message: messages.patientCreateSuccess,
         variant: 'success'
       }))
+      .then(() => history.push('/patients'))
       .then(() => this.setState({ firstName: '', middleName: '', lastName: '', dob: '', gender: '', phone: '', email: '' }))
       .catch(error => {
         this.setState({ firstName: '', middleName: '', lastName: '', dob: '', gender: '', phone: '', email: '' })
