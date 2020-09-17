@@ -11,5 +11,7 @@ export default {
   patientCreateSuccess: 'Patient is in the system.',
   patientCreateFailure: 'Patient is not in the system.',
   patientShowSuccess: 'Here is the patient\'s info.',
-  patientShowFailure: 'Could not show patient\'s info.'
+  patientShowFailure: 'Could not show patient\'s info.',
+  patientDeleteSuccess: 'Patient has been removed from the system.',
+  patientDeleteFailure: 'Patient is still in the system.'
 }
