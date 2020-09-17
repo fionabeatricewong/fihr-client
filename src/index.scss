@@ -8,3 +8,7 @@
 .navbar-right {
   height: 50px;
 }
+
+::placeholder {
+  font-style: italic;
+}
