@@ -41,9 +41,8 @@ class Patients extends Component {
     return (
       <Layout>
         <Link to='/patients/add-patient'>
-          <button>Add New Patient</button>
+          <button className="add-patient">Add New Patient</button>
         </Link>
-        <Link to='/patients'>All Patients</Link>
         <table>
           <tbody>
             {patients}
