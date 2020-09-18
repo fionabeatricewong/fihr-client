@@ -74,18 +74,18 @@ class SignUp extends Component {
                 type="text"
                 name="specialty"
                 value={specialty}
-                placeholder="Enter specialty"
+                placeholder="ie. Dermatology, Ophthalmology, Cardiology"
                 onChange={this.handleChange}
               />
             </Form.Group>
             <Form.Group controlId="email">
-              <Form.Label>Email address</Form.Label>
+              <Form.Label>E-mail</Form.Label>
               <Form.Control
                 required
                 type="email"
                 name="email"
                 value={email}
-                placeholder="Enter email"
+                placeholder="example@email.com"
                 onChange={this.handleChange}
               />
             </Form.Group>

@@ -16,15 +16,15 @@ const authenticatedOptions = (
     <NavDropdown title={<img src={settings} className="navbar-right"/>} alignRight id="settings-dropdown">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
       <NavDropdown.Divider />
-      <NavDropdown.Item href="#sign-out">Sign Out</NavDropdown.Item>
+      <NavDropdown.Item href="#sign-out">Log Out</NavDropdown.Item>
     </NavDropdown>
   </Fragment>
 )
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#sign-up">Sign Up</Nav.Link>
-    <Nav.Link href="#sign-in">Sign In</Nav.Link>
+    <Nav.Link href="#sign-up">Register</Nav.Link>
+    <Nav.Link href="#sign-in">Log In</Nav.Link>
   </Fragment>
 )
 

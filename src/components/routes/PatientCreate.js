@@ -113,7 +113,7 @@ class PatientCreate extends Component {
                   type="text"
                   name="gender"
                   value={gender}
-                  placeholder="female, male, or unspecified"
+                  placeholder="Female, Male, or Unspecified"
                   onChange={this.handleChange}
                 />
               </Form.Group>
@@ -125,7 +125,7 @@ class PatientCreate extends Component {
                   type="text"
                   name="phone"
                   value={phone}
-                  placeholder="(XXX)-XXX-XXXX"
+                  placeholder="(###)-###-####"
                   onChange={this.handleChange}
                 />
               </Form.Group>
