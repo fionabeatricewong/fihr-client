@@ -14,7 +14,7 @@ const authenticatedOptions = (
       { /* <figcaption>Patients</figcaption> */ }
       { /* </figure> */ }
     </Nav.Link>
-    <NavDropdown title={<img src={settings} className="navbar-right"/>} alignRight id="settings-dropdown">
+    <NavDropdown drop='left' title={<img src={settings} className="navbar-right"/>} id="settings-dropdown dropdown-button-drop-left">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
       <NavDropdown.Divider />
       <NavDropdown.Item href="#sign-out">Log Out</NavDropdown.Item>
@@ -24,7 +24,7 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <Fragment>
-    <NavDropdown title={<img src={unauth} className="navbar-right"/>} alignRight id="auth-dropdown">
+    <NavDropdown drop='left' title={<img src={unauth} className="navbar-right"/>} id="auth-dropdown dropdown-button-drop-left">
       <NavDropdown.Item className="navbar-unauth" href="#sign-up">Register</NavDropdown.Item>
       <NavDropdown.Item className="navbar-unauth" href="#sign-in">Log In</NavDropdown.Item>
     </NavDropdown>
