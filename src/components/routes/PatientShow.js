@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Jumbotron, Container } from 'react-bootstrap'
 import { Link, Redirect } from 'react-router-dom'
 import Layout from '../Layout'
 import messages from '../AutoDismissAlert/messages'
@@ -88,12 +89,16 @@ class PatientShow extends Component {
 
     return (
       <Layout>
-        <p>{patient.firstName} {patient.middleName} {patient.lastName}</p>
-        <p>DOB: {moment(patient.dob).format('L')} Gender: {patient.gender}</p>
-        <p>Contact</p>
-        <p>Phone #: {patient.phone}</p>
-        <p>E-mail: {patient.email}</p>
-        <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button> <Link to={`/patients/${this.props.match.params.id}/edit`}><img src={edit} className="edit-patient"/></Link>
+        <Jumbotron fluid>
+          <Container>
+            <h3>{patient.firstName} {patient.middleName} {patient.lastName}</h3>
+            <p>DOB: {moment(patient.dob).format('L')} Gender: {patient.gender}</p>
+            <h4>Contact Info</h4>
+            <p>Phone #: {patient.phone}</p>
+            <p>E-mail: {patient.email}</p>
+            <button className="delete-button"><img src={remove} className="delete-patient" onClick={this.deletePatient}/></button> <Link to={`/patients/${this.props.match.params.id}/edit`}><img src={edit} className="edit-patient"/></Link>
+          </Container>
+        </Jumbotron>
       </Layout>
     )
   }

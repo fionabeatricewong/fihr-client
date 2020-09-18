@@ -8,11 +8,17 @@
 }
 
 $fihr-bold: #fccd55;
+$fihr-pastel: #e8d2c5;
 $no-color: #fff;
 
 // figcaption {
 //   text-align: center;
 // }
+
+.jumbotron {
+  background-color: $fihr-pastel;
+  padding: 50px;
+}
 
 .add-link {
   align-items: center;
