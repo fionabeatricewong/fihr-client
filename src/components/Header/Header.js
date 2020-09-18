@@ -5,6 +5,8 @@ import home from '../../home_icon.png'
 import settings from '../../settings_icon.png'
 import patients from '../../patients_icon.png'
 import unauth from '../../unauth_actions.png'
+import appts from '../../appts_icon.png'
+import messages from '../../messages_icon.png'
 
 const authenticatedOptions = (
   <Fragment>
@@ -13,6 +15,12 @@ const authenticatedOptions = (
       <img src={patients} className="navbar-right"/>
       { /* <figcaption>Patients</figcaption> */ }
       { /* </figure> */ }
+    </Nav.Link>
+    <Nav.Link>
+      <img src={appts} className="navbar-right"/>
+    </Nav.Link>
+    <Nav.Link>
+      <img src={messages} className="navbar-right"/>
     </Nav.Link>
     <NavDropdown drop='left' title={<img src={settings} className="navbar-right"/>} id="settings-dropdown dropdown-button-drop-left">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
