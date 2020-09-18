@@ -38,16 +38,25 @@ $no-color: #fff;
   height: 23px;
 }
 
+.home-greeting {
+  align-content: center;
+  display: flex;
+  font-size: 5.5rem;
+  justify-content: center;
+}
+
 .navbar-left {
   font-size: 60px;
   height: 100px;
 }
 
 .navbar-right {
+  background: transparent;
   height: 50px;
 }
 
-.navbar-text {
+.navbar-text,
+.navbar-unauth {
   align-items: center;
   display: flex;
 }
