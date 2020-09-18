@@ -4,6 +4,7 @@ import logo from '../../FiHR_logo.png'
 import home from '../../home_icon.png'
 import settings from '../../settings_icon.png'
 import patients from '../../patients_icon.png'
+import unauth from '../../unauth_actions.png'
 
 const authenticatedOptions = (
   <Fragment>
@@ -23,8 +24,10 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <Fragment>
-    <Nav.Link className="navbar-unauth" href="#sign-up">Register</Nav.Link>
-    <Nav.Link className="navbar-unauth" href="#sign-in">Log In</Nav.Link>
+    <NavDropdown title={<img src={unauth} className="navbar-right"/>} alignRight id="auth-dropdown">
+      <NavDropdown.Item className="navbar-unauth" href="#sign-up">Register</NavDropdown.Item>
+      <NavDropdown.Item className="navbar-unauth" href="#sign-in">Log In</NavDropdown.Item>
+    </NavDropdown>
   </Fragment>
 )
 
