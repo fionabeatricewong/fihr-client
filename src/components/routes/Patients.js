@@ -48,7 +48,7 @@ class Patients extends Component {
     ))
     return (
       <Layout>
-        <Link to='/add-patient'>
+        <Link to='/add-patient' className="add-patient">
           <img src={add} className="add-patient"/>
         </Link>
         <MDBTable responsive hover size="sm">
