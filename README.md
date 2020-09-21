@@ -9,6 +9,12 @@ FiHR is a React application that is currently just the beginnings of a new EHR s
 - [Deployed API](https://immense-ocean-38958.herokuapp.com/)
 - [API Repo](https://github.com/fionabeatricewong/fihr-api)
 
+## Set Up & Installation
+1. Fork and clone this repository.
+2. Run ```npm install```, ```npm install moment --save```, and ```npm install mdbreact```.
+3. Checkout to a new branch.
+4. Run the development server with ```npm start```.
+
 ## Planning Story
 
 The idea for this application is the reason why I decided to make the move from healthcare to software engineering. During my undergraduate studies and experiences, I worked with several Electronic Medical Record (EMR) and Electronic Health Record (EHR) programs and heard the grievances of healthcare providers regarding these programs. These sentences often started with "I wish *insert suggestion for improvement*" and ended with "Oh well. Nothing I can do about it," so I decided to change careers, make this a passion project, and do something about it. Hence, the name of the application: FiHR (because Fi's EHR? My nickname is Fi? Get it?) except I thought this would be something I would start and pursue much later.
@@ -49,4 +55,4 @@ In future iterations, I'd like to ...
 
 #### Wireframe:
 [FiHR Wireframe](https://imgur.com/ZiF6SHj)
-![App Screenshot](https://imgur.com/MTlrzfv)
+[App Screenshot](https://imgur.com/MTlrzfv)
