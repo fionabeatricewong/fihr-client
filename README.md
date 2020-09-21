@@ -55,4 +55,6 @@ In future iterations, I'd like to ...
 
 #### Wireframe:
 ![FiHR Wireframe](https://i.imgur.com/ZiF6SHj.png)
+
+#### App Screenshot:
 ![App Screenshot](https://i.imgur.com/MTlrzfv.png)
