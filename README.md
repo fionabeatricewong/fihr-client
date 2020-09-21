@@ -55,4 +55,4 @@ In future iterations, I'd like to ...
 
 #### Wireframe:
 [FiHR Wireframe](https://imgur.com/ZiF6SHj)
-[App Screenshot](https://imgur.com/MTlrzfv)
+![App Screenshot](https://i.imgur.com/MTlrzfv.png)
