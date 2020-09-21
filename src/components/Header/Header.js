@@ -41,7 +41,7 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
   <Fragment>
-    <Nav.Link href="/#">
+    <Nav.Link href="#">
       { /* <figure> */ }
       <img src={home} className="navbar-right"/>
       { /* <figcaption>Home</figcaption> */ }
