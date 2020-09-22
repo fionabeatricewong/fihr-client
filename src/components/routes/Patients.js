@@ -42,7 +42,7 @@ class Patients extends Component {
         <td><Link to={`/patients/${patient._id}`}>{patient.lastName}</Link></td>
         <td><Link to={`/patients/${patient._id}`}>{patient.firstName}</Link></td>
         <td><Link to={`/patients/${patient._id}`}>{patient.middleName}</Link></td>
-        <td><Link to={`/patients/${patient._id}`}>{moment(patient.dob).format('L')}</Link></td>
+        <td><Link to={`/patients/${patient._id}`}>{moment.utc(patient.dob).format('L')}</Link></td>
         <td><Link to={`/patients/${patient._id}`}>{patient.gender}</Link></td>
       </tr>
     ))

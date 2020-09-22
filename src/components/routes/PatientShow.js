@@ -92,7 +92,7 @@ class PatientShow extends Component {
         <Jumbotron fluid>
           <Container>
             <h3>{patient.firstName} {patient.middleName} {patient.lastName}</h3>
-            <p>DOB: {moment(patient.dob).format('L')}</p>
+            <p>DOB: {moment.utc(patient.dob).format('L')}</p>
             <p>Gender: {patient.gender}</p>
             <h4>Contact Info</h4>
             <p>Phone #: {patient.phone}</p>
